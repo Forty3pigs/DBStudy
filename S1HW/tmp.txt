@@ -1,0 +1,32 @@
+        public static void Drivers()
+        {
+            string text = "driverID;fName;lName;\n";
+            int dCount = 10;
+
+            Random random = new Random();
+            for (int id = 1; id <= dCount; id++)
+            {
+                string fName = $"Вод.Имя_{id}";
+                string lName = $"Вод.Фамилия_{id}";
+                text += $"{id};{fName};{lName};\n";
+            }
+
+            Console.WriteLine(text);
+            //File.WriteAllText("output.csv", text);
+        }
+        public static void Conductors()
+        {
+            int dCount = 10;
+            string text = "ConductorID;fName;lName;\n";
+
+            Random random = new Random();
+            for (int id = 1; id <= dCount; id++)
+            {
+                string fName = $"Конд.Имя_{id}";
+                string lName = $"Конд.Фамилия_{id}";
+                text += $"{id};{fName};{lName};\n";
+            }
+
+            Console.WriteLine(text);
+            //File.WriteAllText("output.csv", text);
+        }
